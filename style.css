@@ -1,0 +1,68 @@
+.body {
+
+}
+
+.game {
+background-color: aquamarine;
+width: 600px;
+height: 400px;
+border-bottom: 5px solid rgb(12, 149, 48);
+margin: auto;
+margin-top: 10%;
+
+}
+
+
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/36-368675_tyrannosaurus-rex-pixel-clip-arts-8-bit-dinosaur.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 350px;
+    left: 50px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/3050983.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 310px;
+    left: 580px;
+    animation: cactusMov 2.5s infinite linear;
+}
+
+@keyframes cactusMov {
+    0% { 
+       left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}        
+
+.jump {
+    animation: jump 0.5s  linear; 
+}
+
+@keyframes jump {
+    0% { 
+       top: 50px;
+    }
+    30% {
+       top: 70px;
+    }
+    50% {
+        top: 80px; 
+    }   
+    80% {
+        top: 90px;
+    }
+    100% {
+        top: 80px;
+    } 
+
+}
